@@ -1,0 +1,129 @@
+/* Définir les styles de base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Couleur de fond légère */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texte sombre pour la lisibilité */
+}
+
+/* En-tête */
+header {
+    background-color: #343a40; /* Couleur de fond foncée */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #007bff; /* Bleu pour la barre de navigation */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Changer la couleur au survol */
+    transition: background-color 0.3s ease;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Section des monuments */
+.monument {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+.monument img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.monument-info {
+    width: 65%;
+    padding-left: 20px;
+}
+
+.monument-info h2 {
+    color: #007bff; /* Couleur bleue pour les titres */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.monument-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsivité pour les petits écrans (tablettes et téléphones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .monument {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .monument img {
+        margin-bottom: 15px;
+    }
+
+    .monument-info {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
