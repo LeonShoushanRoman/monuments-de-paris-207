@@ -61,7 +61,7 @@ nav a:hover {
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour de la profondeur */
 }
 
 .monument img {
@@ -96,7 +96,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsivité pour les petits écrans (tablettes et téléphones) */
+/* Possibilité pour les mobiles de voir le site */
 @media (max-width: 768px) {
     .container {
         width: 90%;
